@@ -1,4 +1,4 @@
 interface:
   display_name: "AI 评测方案助手"
-  short_description: "从业务决策出发完成评测目标卡、覆盖评测集与可执行Rubric"
+  short_description: "业务决策、评测目标卡、覆盖评测集与可执行 Rubric。"
   default_prompt: "使用 $evaluation-assistant 帮我从产品场景开始完成一套测评。"
