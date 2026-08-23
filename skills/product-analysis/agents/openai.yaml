@@ -1,4 +1,4 @@
 interface:
-  display_name: "product-analysis"
+  display_name: "产品架构分析"
   short_description: "从产品截图组反推用户旅程、Agent契约与全景架构"
   default_prompt: "使用 $product-analysis 分析这组产品操作截图，并引导我逐项选择要生成的架构拆解文件。"
