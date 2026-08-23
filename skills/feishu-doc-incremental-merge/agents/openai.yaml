@@ -1,6 +1,6 @@
 interface:
   display_name: "飞书文档增量融合整理"
-  short_description: "对比增量来源与飞书母板，去重后按语义位置精准融合并验证"
+  short_description: "对比增量来源与飞书母板，去重后按语义位置融合并验证"
   default_prompt: "使用 $feishu-doc-incremental-merge，将这些增量来源融合到我的飞书母板文档中。"
 
 policy:
