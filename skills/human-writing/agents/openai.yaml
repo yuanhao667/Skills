@@ -1,6 +1,6 @@
 interface:
-  display_name: 活人感写作
-  short_description: 锁定主题、深挖分论点，写出自然中文并评估热门潜力
+  display_name: "活人感写作"
+  short_description: "从选题到中文成稿"
   default_prompt: 使用 $human-writing，陪我从选题、观点和材料开始共创。及时锁定主题并提醒跑题，把每个分论点深挖一层后融合成自然文章，定稿后处理标题、配图、未采用材料和热门潜力评分。
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
