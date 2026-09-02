@@ -31,7 +31,7 @@
 | `evaluation-assistant` | 将模糊的模型、Prompt、Agent 或 Skill 评测需求，整理为目标卡、覆盖矩阵、评测集和可执行 Rubric。 | [打开](skills/evaluation-assistant) |
 | `feishu-doc-incremental-merge` | 把会议纪要、录音总结或参考资料中的新增信息去重后，按语义位置融合进既有飞书文档。 | [打开](skills/feishu-doc-incremental-merge) |
 | `product-analysis` | 从产品截图和操作证据反向整理用户旅程、Agent 契约、System Prompt 与产品全景架构。 | [打开](skills/product-analysis) |
-| `readme-plus` | 创建或改造可信、可读、可行动的 GitHub README，并处理徽章、Hero、Release 下载和仓库元信息，避免公开内部产品策略。 | [打开](skills/readme-plus) |
+| `readme-plus` | 创建或改造可信、可读、可行动的 GitHub README，并按受众控制徽章、安装、开发信息和产品策略的公开边界。 | [打开](skills/readme-plus) |
 
 <a id="install"></a>
 ## 安装
