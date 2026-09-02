@@ -1,0 +1,28 @@
+{
+  "name": "readme-plus",
+  "version": "1.3.0",
+  "description": "AI Agent Skill for factual GitHub project pages with badges, navigation, one Hero, verified release downloads, and repository metadata",
+  "scripts": {
+    "screenshot": "node scripts/gen_infographic.mjs",
+    "compress": "node scripts/compress_png_assets.mjs",
+    "webp": "node scripts/convert_webp_assets.mjs"
+  },
+  "keywords": [
+    "readme",
+    "github-readme",
+    "agent-skill",
+    "codex",
+    "image-generation",
+    "project-home",
+    "shields-io",
+    "github-releases",
+    "dmg",
+    "seo"
+  ],
+  "author": "yuanhao667",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}
