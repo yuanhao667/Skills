@@ -1,0 +1,4 @@
+interface:
+  display_name: "readme-plus"
+  short_description: "创建可信、可下载、具有项目主页质感的 GitHub README"
+  default_prompt: "Use $readme-plus to create or improve this repository's GitHub README."
