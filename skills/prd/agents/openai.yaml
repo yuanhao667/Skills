@@ -1,0 +1,12 @@
+interface:
+  display_name: "PRD"
+  short_description: 通过逐步需求访谈、现状核验和方案拆解，共创可评审、可实施的中文产品需求文档。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

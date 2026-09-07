@@ -4,7 +4,7 @@
 
 **一组面向真实工作流持续打磨、可独立安装的 Codex Skills。**
 
-[![Skills](https://img.shields.io/badge/Skills-5-22C55E?style=flat-square&labelColor=111827)](#skills-catalog)
+[![Skills](https://img.shields.io/badge/Skills-6-22C55E?style=flat-square&labelColor=111827)](#skills-catalog)
 [![Platform](https://img.shields.io/badge/Platform-Codex-4F8FF7?style=flat-square&labelColor=111827&logo=openai&logoColor=white)](#install)
 [![Format](https://img.shields.io/badge/Format-SKILL.md-8B5CF6?style=flat-square&labelColor=111827)](#structure)
 [![Language](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-F59E0B?style=flat-square&labelColor=111827)](#skills-catalog)
@@ -20,13 +20,14 @@
 
 这里收录我在产品、写作、AI 评测、文档整理和项目交付中持续使用的 Codex Skills。每个 Skill 都有独立的触发范围、工作流程与必要参考资料，可以单独安装，也可以一次选择多个。
 
-当前共收录 **5 个 Skills**。每个目录中的 `SKILL.md` 是能力入口；`agents/`、`references/`、`scripts/` 和 `templates/` 只在该 Skill 确实需要时提供。
+当前共收录 **6 个 Skills**。每个目录中的 `SKILL.md` 是能力入口；`agents/`、`references/`、`scripts/` 和 `templates/` 只在该 Skill 确实需要时提供。
 
 <a id="skills-catalog"></a>
 ## Skill 目录
 
 | Skill | 适合做什么 | 查看 |
 |---|---|---|
+| **PRD** (`prd`) | 通过产品定义与开发视角反向审查两轮共创，按当前需求动态补齐产品规则、判断研发就绪状态，并维护 PRD 变更。 | [打开](skills/prd) |
 | `human-writing` | 从选题、观点深挖和公开材料检索，到中文文章、故事、口播与演讲稿的共创和改稿。 | [打开](skills/human-writing) |
 | `evaluation-assistant` | 将模糊的模型、Prompt、Agent 或 Skill 评测需求，整理为目标卡、覆盖矩阵、评测集和可执行 Rubric。 | [打开](skills/evaluation-assistant) |
 | `feishu-doc-incremental-merge` | 把会议纪要、录音总结或参考资料中的新增信息去重后，按语义位置融合进既有飞书文档。 | [打开](skills/feishu-doc-incremental-merge) |
@@ -45,7 +46,7 @@ npx skills add yuanhao667/Skills
 只安装指定 Skill 到 Codex：
 
 ```bash
-npx skills add yuanhao667/Skills --skill readme-plus --agent codex
+npx skills add yuanhao667/Skills --skill prd --agent codex
 ```
 
 一次安装仓库中的全部 Skills：
@@ -62,6 +63,8 @@ npx skills add yuanhao667/Skills --skill '*' --agent codex
 可以直接描述任务，让 Codex 根据 Skill 的说明自动匹配；也可以用 `$skill-name` 明确指定：
 
 ```text
+$prd 帮我梳理这个产品需求，先定义产品方案，再从开发视角补齐需要拍板的产品规则。
+
 $readme-plus 帮我把这个仓库的 README 改成清晰的项目主页。
 
 $evaluation-assistant 帮我把这次模型选型整理成可执行评测方案。
@@ -83,6 +86,7 @@ Skills/
         ├── agents/           # 可选：Codex 展示与调用元数据
         ├── references/       # 可选：按场景读取的详细规则
         ├── scripts/          # 可选：可重复执行的工具脚本
+        ├── assets/           # 可选：图标和交付素材
         └── templates/        # 可选：可复用模板
 ```
 
