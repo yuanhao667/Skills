@@ -4,7 +4,7 @@
 
 **一组面向真实工作流持续打磨、可独立安装的 Codex Skills。**
 
-[![Skills](https://img.shields.io/badge/Skills-6-22C55E?style=flat-square&labelColor=111827)](#skills-catalog)
+[![Skills](https://img.shields.io/badge/Skills-7-22C55E?style=flat-square&labelColor=111827)](#skills-catalog)
 [![Platform](https://img.shields.io/badge/Platform-Codex-4F8FF7?style=flat-square&labelColor=111827&logo=openai&logoColor=white)](#install)
 [![Format](https://img.shields.io/badge/Format-SKILL.md-8B5CF6?style=flat-square&labelColor=111827)](#structure)
 [![Language](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-F59E0B?style=flat-square&labelColor=111827)](#skills-catalog)
@@ -20,7 +20,7 @@
 
 这里收录我在产品、写作、AI 评测、文档整理和项目交付中持续使用的 Codex Skills。每个 Skill 都有独立的触发范围、工作流程与必要参考资料，可以单独安装，也可以一次选择多个。
 
-当前共收录 **6 个 Skills**。每个目录中的 `SKILL.md` 是能力入口；`agents/`、`references/`、`scripts/` 和 `templates/` 只在该 Skill 确实需要时提供。
+当前共收录 **7 个 Skills**。每个目录中的 `SKILL.md` 是能力入口；`agents/`、`references/`、`scripts/` 和 `templates/` 只在该 Skill 确实需要时提供。
 
 <a id="skills-catalog"></a>
 ## Skill 目录
@@ -28,6 +28,7 @@
 | Skill | 适合做什么 | 查看 |
 |---|---|---|
 | **PRD** (`prd`) | 通过产品定义与开发视角反向审查两轮共创，按当前需求动态补齐产品规则、判断研发就绪状态，并维护 PRD 变更。 | [打开](skills/prd) |
+| **Red Book** (`red-book`) | 从产品选题、五分钟实测和轻量拆解出发，在 Figma 固定生成 7 张小红书/微信小绿书发布图与 1 张双平台文案复制区。 | [打开](skills/red-book) |
 | `human-writing` | 从选题、观点深挖和公开材料检索，到中文文章、故事、口播与演讲稿的共创和改稿。 | [打开](skills/human-writing) |
 | `evaluation-assistant` | 将模糊的模型、Prompt、Agent 或 Skill 评测需求，整理为目标卡、覆盖矩阵、评测集和可执行 Rubric。 | [打开](skills/evaluation-assistant) |
 | `feishu-doc-incremental-merge` | 把会议纪要、录音总结或参考资料中的新增信息去重后，按语义位置融合进既有飞书文档。 | [打开](skills/feishu-doc-incremental-merge) |
@@ -49,6 +50,12 @@ npx skills add yuanhao667/Skills
 npx skills add yuanhao667/Skills --skill prd --agent codex
 ```
 
+安装 Red Book：
+
+```bash
+npx skills add yuanhao667/Skills --skill red-book --agent codex
+```
+
 一次安装仓库中的全部 Skills：
 
 ```bash
@@ -67,13 +74,14 @@ $prd 帮我梳理这个产品需求，先定义产品方案，再从开发视角
 
 $readme-plus 帮我把这个仓库的 README 改成清晰的项目主页。
 
+$red-book 帮我实测并拆解这个产品，在 Figma 生成完整的 8 张发布画板。
+
 $evaluation-assistant 帮我把这次模型选型整理成可执行评测方案。
 
 $product-analysis 根据这些产品截图梳理用户旅程和 Agent 架构。
 ```
 
-每个 Skill 的适用范围和边界都写在对应的 `SKILL.md` 中。遇到复杂或条件化流程时，Skill 会按需读取自己的参考文件。
-
+每个 Skill 的适用范围和边界都写在对应的 `SKILL.md` 中。遇到复杂或条件化流程时，Skills 会戉需读取它自己的参考文件。
 <a id="structure"></a>
 ## 仓库结构
 
