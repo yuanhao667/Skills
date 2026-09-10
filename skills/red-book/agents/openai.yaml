@@ -1,0 +1,5 @@
+interface:
+  display_name: "Red Book"
+  short_description: "从实测拆解、小红书七图到公众号复用的一体化流程"
+  brand_color: "#6F2BFF"
+  default_prompt: "使用 $red-book 帮我完成一个产品的选题判断、体验测试、拆解、小红书七图与微信小绿书发布文案。"
