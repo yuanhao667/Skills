@@ -1,0 +1,4 @@
+interface:
+  display_name: "Geo"
+  short_description: "整合客户诊断、关键词挖掘、文章写作、平台改写与豆包效果监测"
+  default_prompt: "使用 $geo，根据客户档案完成 GEO 内容规划、文章生产或豆包效果诊断，并交付当前阶段所需结果。"
